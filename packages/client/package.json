@@ -1,7 +1,7 @@
 {
   "name": "@nno/client",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "@mui/material": "^5.10.12",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",

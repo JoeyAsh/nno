@@ -1,3 +1,5 @@
 import {TypographyOptions} from '@mui/material/styles/createTypography';
 
-export const typography: TypographyOptions = {};
+export const typography: TypographyOptions = {
+    fontFamily: ['Montserrat', 'serif'].join(','),
+};
