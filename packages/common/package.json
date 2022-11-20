@@ -1,0 +1,35 @@
+{
+  "name": "@joeyash-monorepo/common",
+  "private": false,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.0",
+    "vite-plugin-dts": "^1.6.6"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "react": "^16.8.x || ^17.x.x || ^18.2.0",
+    "react-dom": "^16.8.x || ^17.x.x || ^18.2.0",
+    "@mui/material": "^5.10.12",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5"
+  },
+  "files": ["./build"],
+  "main": "./build/common.umd.js",
+  "module": "./build/common.es.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/common.es.js",
+      "require": "./build/common.umd.js"
+    }
+  }
+}

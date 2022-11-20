@@ -1,0 +1,6 @@
+/.git
+# Ignore fixtures
+# just an import that reports eslint errors depending on whether the fixture (which is not checked in) exists
+node_modules
+babel.config.js
+.eslintrc.js

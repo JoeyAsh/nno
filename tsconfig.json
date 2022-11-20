@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "module": "esnext",
+        "target": "es6",
+        "lib": ["es2020", "dom"],
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noEmit": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./",
+        "allowSyntheticDefaultImports": true,
+        "noErrorTruncation": false,
+        "allowJs": true,
+        "paths": {
+            "@joeyash-monorepo/client": ["./packages/client/src"],
+            "@joeyash-monorepo/client/*": ["./packages/client/src/*"],
+            "@joeyash-monorepo/common": ["./packages/common/src/lib"],
+            "@joeyash-monorepo/common/*": ["./packages/common/src/lib/*"],
+            "@joeyash-monorepo/server": ["./packages/server/src/*"],
+            "@joeyash-monorepo/server/*": ["./packages/server/src/*"],
+
+        },
+        // Otherwise we get react-native typings which conflict with dom.lib.
+        "types": ["node", "react", "react-is/next"]
+    },
+    "exclude": ["**/.*/", "**/build", "**/node_modules", "docs/export"]
+}
