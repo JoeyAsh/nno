@@ -1,5 +1,5 @@
 import {Box} from '@mui/material';
-import {TestButton} from '@joeyash-monorepo/common';
+import {TestButton} from '@nno/common';
 
 export const App = (): JSX.Element => {
     return (

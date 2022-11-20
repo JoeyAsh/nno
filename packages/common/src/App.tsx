@@ -5,7 +5,7 @@ function App() {
     return (
         <Container>
             <Stack spacing={2}>
-                <Typography variant={'h4'}>@joeyash-monorepo/common</Typography>
+                <Typography variant={'h4'}>@nno/common</Typography>
                 <Box>
                     <TestButton />
                 </Box>

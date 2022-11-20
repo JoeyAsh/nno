@@ -17,12 +17,12 @@
         "noErrorTruncation": false,
         "allowJs": true,
         "paths": {
-            "@joeyash-monorepo/client": ["./packages/client/src"],
-            "@joeyash-monorepo/client/*": ["./packages/client/src/*"],
-            "@joeyash-monorepo/common": ["./packages/common/src/lib"],
-            "@joeyash-monorepo/common/*": ["./packages/common/src/lib/*"],
-            "@joeyash-monorepo/server": ["./packages/server/src/*"],
-            "@joeyash-monorepo/server/*": ["./packages/server/src/*"],
+            "@nno/client": ["./packages/client/src"],
+            "@nno/client/*": ["./packages/client/src/*"],
+            "@nno/common": ["./packages/common/src/lib"],
+            "@nno/common/*": ["./packages/common/src/lib/*"],
+            "@nno/server": ["./packages/server/src/*"],
+            "@nno/server/*": ["./packages/server/src/*"],
 
         },
         // Otherwise we get react-native typings which conflict with dom.lib.

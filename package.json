@@ -1,17 +1,14 @@
 {
-    "name": "@joeyash-monorepo/root",
+    "name": "@nno/root",
     "private": true,
     "workspaces": [
         "packages/*"
     ],
     "scripts": {
-        "build:common": "lerna run build --scope=@joeyash-monorepo/common",
-        "dev:client": "lerna run dev --scope=@joeyash-monorepo/client"
+        "build:common": "lerna run build --scope=@nno/common",
+        "dev:client": "lerna run dev --scope=@nno/client"
     },
     "devDependencies": {
-        "lerna": "^6.0.1",
-        "eslint": "^8.27.0",
-        "prettier": "^2.7.1",
         "@babel/cli": "^7.19.3",
         "@babel/core": "^7.20.2",
         "@babel/node": "^7.20.2",
@@ -56,6 +53,7 @@
         "core-js": "^2.6.11",
         "cross-env": "^7.0.3",
         "enzyme": "^3.11.0",
+        "eslint": "^8.27.0",
         "eslint-config-airbnb-typescript": "^12.3.1",
         "eslint-config-prettier": "^8.5.0",
         "eslint-import-resolver-webpack": "^0.13.2",
@@ -66,9 +64,11 @@
         "eslint-plugin-react": "^7.31.10",
         "eslint-plugin-react-hooks": "^4.6.0",
         "format-util": "^1.0.5",
+        "lerna": "^6.0.1",
         "lodash": "^4.17.21",
         "node-fetch": "^2.6.7",
         "nx": "^14.8.6",
+        "prettier": "^2.7.1",
         "process": "^0.11.10",
         "rollup": "^2.79.1",
         "rollup-plugin-babel": "^4.4.0",

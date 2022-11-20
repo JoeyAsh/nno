@@ -38,7 +38,7 @@ module.exports = {
             'error',
             {
                 patterns: [
-                    '@joeyash-monorepo/*/*/*',
+                    '@nno/*/*/*',
                     // Begin block: Packages with files instead of packages in the top level
                     // Importing from the top level pulls in CommonJS instead of ES modules
                     // Allowing /icons as to reduce cold-start of dev builds significantly.
@@ -207,7 +207,7 @@ module.exports = {
                     {
                         patterns: [
                             // Allow deeper imports for TypeScript types. TODO?
-                            '@joeyash-monorepo/*/*/*/*',
+                            '@nno/*/*/*/*',
                         ],
                     },
                 ],

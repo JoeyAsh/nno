@@ -1,5 +1,5 @@
 {
-  "name": "@joeyash-monorepo/common",
+  "name": "@nno/common",
   "private": false,
   "version": "0.1.0",
   "scripts": {

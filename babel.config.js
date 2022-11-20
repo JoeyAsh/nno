@@ -9,9 +9,9 @@ function resolveAliasPath(relativeToBabelConf) {
 }
 
 const defaultAlias = {
-    '@joeyash-monorepo/common': resolveAliasPath('./packages/common/src'),
-    '@joeyash-monorepo/client': resolveAliasPath('./packages/client/src'),
-    '@joeyash-monorepo/server': resolveAliasPath('./packages/server/src'),
+    '@nno/common': resolveAliasPath('./packages/common/src'),
+    '@nno/client': resolveAliasPath('./packages/client/src'),
+    '@nno/server': resolveAliasPath('./packages/server/src'),
 };
 
 const productionPlugins = [

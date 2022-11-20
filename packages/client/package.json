@@ -1,5 +1,5 @@
 {
-  "name": "@joeyash-monorepo/client",
+  "name": "@nno/client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,7 @@
     "@mui/material": "^5.10.12",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@joeyash-monorepo/common": "*"
+    "@nno/common": "*"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
