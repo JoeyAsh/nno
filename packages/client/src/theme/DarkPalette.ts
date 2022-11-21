@@ -8,11 +8,11 @@ export const darkPalette: PaletteOptions = {
         disabled: 'rgba(255,255,255,0.5)',
     },
     primary: {
-        main: '#E03E1A',
-        contrastText: '#FFFFFF',
+        main: '#ffffff',
+        contrastText: '#000000',
     },
     secondary: {
-        main: '#00B39A',
+        main: '#E03E1A',
     },
     success: {
         main: '#66BB6A',

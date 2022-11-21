@@ -1,14 +1,22 @@
 import {createTheme, CssBaseline, ThemeProvider} from '@mui/material';
-import {ReactNode} from 'react';
-import {components} from './Components';
+import {ReactNode, useMemo} from 'react';
+import {useTheme} from '../hooks/ThemeHooks';
 import {typography} from './Typography';
-
-const theme = createTheme({
-    typography,
-    components,
-});
+import {components} from './Components';
 
 export const Theme = ({children}: {children: ReactNode}): JSX.Element => {
+    const {palette} = useTheme();
+
+    const theme = useMemo(
+        () =>
+            createTheme({
+                typography,
+                components,
+                palette,
+            }),
+        [palette],
+    );
+
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />

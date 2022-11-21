@@ -1,8 +1,7 @@
 node_modules/
 /**/node_modules
 # Ignore files with sensitive environment variables
-.env
-.env.test
+.env.local
 # Next.js output
 .next/
 # Parcel cache

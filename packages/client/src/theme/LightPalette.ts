@@ -3,16 +3,16 @@ import {PaletteOptions} from '@mui/material';
 export const lightPalette: PaletteOptions = {
     mode: 'light',
     text: {
-        primary: '#FFFFFF',
-        secondary: 'rgba(255,255,255,0.7)',
-        disabled: 'rgba(255,255,255,0.5)',
+        primary: '#000000',
+        secondary: 'rgba(0,0,0,0.7)',
+        disabled: 'rgba(0,0,0,0.5)',
     },
     primary: {
-        main: '#E03E1A',
+        main: '#00000',
         contrastText: '#FFFFFF',
     },
     secondary: {
-        main: '#00B39A',
+        main: '#E03E1A',
     },
     success: {
         main: '#66BB6A',

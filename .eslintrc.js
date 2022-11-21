@@ -114,7 +114,7 @@ module.exports = {
             {extensions: ['.js', '.tsx']},
         ],
         // Prefer <React.Fragment> over <>.
-        'react/jsx-fragments': ['error', 'element'],
+        'react/jsx-fragments': 'off',
         // Enforces premature optimization
         'react/jsx-no-bind': 'off',
         // We are a UI library.

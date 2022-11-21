@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite';
+// @ts-ignore
 import viteConfig from '../../vite.config';
 
 // https://vitejs.dev/config/

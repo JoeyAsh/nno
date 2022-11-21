@@ -17,15 +17,12 @@
         "noErrorTruncation": false,
         "allowJs": true,
         "paths": {
-            "@nno/client": ["./packages/client/src"],
-            "@nno/client/*": ["./packages/client/src/*"],
             "@nno/common": ["./packages/common/src/lib"],
             "@nno/common/*": ["./packages/common/src/lib/*"],
-            "@nno/server": ["./packages/server/src/*"],
-            "@nno/server/*": ["./packages/server/src/*"],
 
         },
-        // Otherwise we get react-native typings which conflict with dom.lib.
+      /// <reference types="vite-plugin-svgr/client" />
+      // Otherwise we get react-native typings which conflict with dom.lib.
         "types": ["node", "react", "react-is/next"]
     },
     "exclude": ["**/.*/", "**/build", "**/node_modules", "docs/export"]
