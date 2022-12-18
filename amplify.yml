@@ -19,7 +19,7 @@ applications:
           commands:
             - yarn build
       artifacts:
-        baseDirectory: /
+        baseDirectory: /build
         files:
           - '**/*'
       cache:
