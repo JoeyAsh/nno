@@ -28,8 +28,5 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.0",
     "vitest": "^0.25.8"
-  },
-  "engines": {
-    "node": "v19.1.0"
   }
 }
