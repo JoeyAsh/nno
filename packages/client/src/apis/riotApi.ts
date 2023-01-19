@@ -7,7 +7,10 @@ export const riotApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: 'https://euw1.api.riotgames.com/lol/',
         prepareHeaders: (headers) => {
-            headers.set('X-Riot-Token', import.meta.env.RIOT_API_KEY);
+            headers.set(
+                'X-Riot-Token',
+                'RGAPI-46f1d6dd-0bbd-4ae6-8f2d-f6f2f14f27d7',
+            );
             return headers;
         },
     }),
