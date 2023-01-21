@@ -17,6 +17,7 @@ module.exports = {
     },
     plugins: ['eslint-plugin-react-hooks', '@typescript-eslint/eslint-plugin'],
     rules: {
+        'class-methods-use-this': 'off',
         'import/prefer-default-export': 'off',
         'react/react-in-jsx-scope': 'off',
         'consistent-this': ['error', 'self'],

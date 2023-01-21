@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/server/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": false,
+    "tsConfigPath": "apps/server/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/server",
+  "projects": {
+    "server": {
+      "type": "application",
+      "root": "apps/server",
+      "entryFile": "main",
+      "sourceRoot": "apps/server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/server/tsconfig.app.json"
+      }
+    },
+    "riot": {
+      "type": "application",
+      "root": "apps/riot",
+      "entryFile": "main",
+      "sourceRoot": "apps/riot/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/riot/tsconfig.app.json"
+      }
+    },
+    "twitch": {
+      "type": "application",
+      "root": "apps/twitch",
+      "entryFile": "main",
+      "sourceRoot": "apps/twitch/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/twitch/tsconfig.app.json"
+      }
+    },
+    "auth": {
+      "type": "application",
+      "root": "apps/auth",
+      "entryFile": "main",
+      "sourceRoot": "apps/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
+      }
+    },
+    "modules": {
+      "type": "library",
+      "root": "libs/modules",
+      "entryFile": "index",
+      "sourceRoot": "libs/modules/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/modules/tsconfig.lib.json"
+      }
+    }
+  }
+}
