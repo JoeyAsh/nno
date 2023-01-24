@@ -1,0 +1,17 @@
+{
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "nnoclient",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": "packages/client/src",
+      "DistributionDir": "packages/client/build",
+      "BuildCommand": "yarn workspaces foreach yarn build",
+      "StartCommand": "yarn start:services"
+    }
+  }
+}
