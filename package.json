@@ -6,7 +6,9 @@
     ],
     "scripts": {
         "build:common": "lerna run build --scope=@nno/common",
-        "dev:client": "lerna run dev --scope=@nno/client"
+        "dev:client": "lerna run dev --scope=@nno/client",
+        "build": "yarn workspaces foreach yarn build",
+        "start:services": "lerna run start --scope=@nno/server"
     },
     "devDependencies": {
         "@babel/cli": "^7.19.3",

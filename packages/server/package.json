@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "@nno/server",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nest build && nest build riot && nest build twitch && nest build auth",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
-    "start": "nest start",
+    "start": "nest start && nest start riot && nest start twitch && nest start auth",
     "start:dev:server": "nest start --watch",
     "start:dev:riot": "nest start riot --watch",
     "start:dev:twitch": "nest start twitch --watch",
