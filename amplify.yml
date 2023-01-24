@@ -26,3 +26,17 @@ applications:
         paths:
           - node_modules/**/*
     appRoot: packages/client
+  - backend:
+      phases:
+        build:
+          commands:
+            - yarn build
+      artifacts:
+        baseDirectory: /dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: packages/server
+

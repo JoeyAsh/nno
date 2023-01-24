@@ -136,6 +136,12 @@ module.exports = {
     },
     overrides: [
         {
+            files: ['*/server/*/**'],
+            rules: {
+                'no-console': 'off',
+            },
+        },
+        {
             files: [
                 // matching the pattern of the test runner
                 '*.test.js',
