@@ -1,6 +1,6 @@
 import {NestFactory} from '@nestjs/core';
 import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';
-import process from 'process';
+import * as process from 'process';
 import {TwitchModule} from './twitch.module';
 
 const port = process.env.TWITCH_API_PORT || 5002;

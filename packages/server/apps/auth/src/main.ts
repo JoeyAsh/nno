@@ -1,6 +1,6 @@
 import {NestFactory} from '@nestjs/core';
 import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';
-import process from 'process';
+import * as process from 'process';
 import {AuthModule} from './auth.module';
 
 const port = process.env.AUTH_API_PORT || 5003;

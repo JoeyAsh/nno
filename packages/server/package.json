@@ -9,6 +9,7 @@
     "build": "nest build && nest build riot && nest build twitch && nest build auth",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start && nest start riot && nest start twitch && nest start auth",
+    "start:dev": "nest start --watch && nest start riot --watch && nest start twitch --watch && nest start auth --watch",
     "start:dev:server": "nest start --watch",
     "start:dev:riot": "nest start riot --watch",
     "start:dev:twitch": "nest start twitch --watch",

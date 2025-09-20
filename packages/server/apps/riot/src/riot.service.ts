@@ -9,14 +9,10 @@ export class RiotService {
     private readonly api = new LolApi();
 
     async getByName(name: string) {
-        const response = await this.api.Summoner.getByName(
+        const {response} = await this.api.Summoner.getByName(
             name,
             Constants.Regions.EU_WEST,
         );
-        console.log(response);
-        return this.api.Summoner.getById(
-            response.response.id,
-            Constants.Regions.EU_WEST,
-        );
+        return response;
     }
 }
